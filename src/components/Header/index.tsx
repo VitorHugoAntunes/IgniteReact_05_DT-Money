@@ -1,9 +1,10 @@
-import { HeaderContainer, HeaderContent, NewTransationButton } from "./styles";
-import * as Dialog from '@radix-ui/react-dialog';
+import { HeaderContainer, HeaderContent, NewTransationButton } from './styles'
+import * as Dialog from '@radix-ui/react-dialog'
 
-import logoDTMoney from '../../assets/logo.svg';
-import { NewTransactionModal } from "../NewTransactionModal";
+import logoDTMoney from '../../assets/logo.svg'
+import { NewTransactionModal } from '../NewTransactionModal'
 
+// Chamando um modal global a partir do botao do header
 export function Header() {
   return (
     <HeaderContainer>

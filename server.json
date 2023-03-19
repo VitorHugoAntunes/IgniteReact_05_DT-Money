@@ -1,0 +1,44 @@
+{
+  "transactions": [
+    {
+      "description": "teste",
+      "price": 12,
+      "category": "awsaea",
+      "type": "income",
+      "createdAt": "2023-03-19T23:22:48.471Z",
+      "id": 1
+    },
+    {
+      "description": "a",
+      "price": 123,
+      "category": "a",
+      "type": "income",
+      "createdAt": "2023-03-19T23:24:20.918Z",
+      "id": 2
+    },
+    {
+      "description": "Venda",
+      "price": 4000,
+      "category": "venda",
+      "type": "income",
+      "createdAt": "2023-03-19T23:24:53.264Z",
+      "id": 3
+    },
+    {
+      "description": "oi",
+      "price": 2000,
+      "category": "venda",
+      "type": "outcome",
+      "createdAt": "2023-03-19T23:25:31.999Z",
+      "id": 4
+    },
+    {
+      "description": "testes",
+      "price": 1000,
+      "category": "vendas",
+      "type": "outcome",
+      "createdAt": "2023-03-19T23:25:51.196Z",
+      "id": 5
+    }
+  ]
+}
