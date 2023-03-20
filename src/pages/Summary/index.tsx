@@ -5,6 +5,7 @@ import { useSummary } from '../../hooks/useSummary'
 
 export function Summary() {
   const { income, outcome, total } = useSummary()
+
   return (
     <SummaryContainer>
       <SummaryCard textColor="green">
@@ -19,15 +20,25 @@ export function Summary() {
           <span>Saídas</span>
           <ArrowCircleDown size={32} color="#f75a68" />
         </header>
-        <strong>{'- ' + priceFormatter.format(outcome)}</strong>
+        <strong>{'-' + priceFormatter.format(outcome)}</strong>
       </SummaryCard>
-      <SummaryCard variant="green">
-        <header>
-          <span>Total</span>
-          <CurrencyDollar size={32} color="#fff" />
-        </header>
-        <strong>{priceFormatter.format(total)}</strong>
-      </SummaryCard>
+      {total < 0 ? (
+        <SummaryCard variant="red">
+          <header>
+            <span>Total</span>
+            <CurrencyDollar size={32} color="#fff" />
+          </header>
+          <strong>{priceFormatter.format(total)}</strong>
+        </SummaryCard>
+      ) : (
+        <SummaryCard variant="green">
+          <header>
+            <span>Total</span>
+            <CurrencyDollar size={32} color="#fff" />
+          </header>
+          <strong>{priceFormatter.format(total)}</strong>
+        </SummaryCard>
+      )}
     </SummaryContainer>
   )
 }

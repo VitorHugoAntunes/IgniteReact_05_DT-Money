@@ -6,6 +6,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 
 import { SearchFormContainer } from './styles'
 import { useTransactionsContext } from '../../../../hooks/useTransactionsContext'
+// import { memo } from 'react'
 
 const searchFormSchema = zod.object({
   query: zod.string(),
@@ -41,3 +42,5 @@ export function SearchForm() {
     </SearchFormContainer>
   )
 }
+
+// export const SearchForm = memo(SearchFormComponent)
