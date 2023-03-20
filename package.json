@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "server": "json-server server.json -w -d 700",
+    "server": "json-server server.json -w -d 500",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint src --ext .tsx,.ts --fix"
@@ -19,7 +19,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.43.7",
+    "scheduler": "^0.23.0",
     "styled-components": "^5.3.9",
+    "use-context-selector": "^1.4.1",
     "uuid": "^9.0.0",
     "zod": "^3.21.4"
   },
